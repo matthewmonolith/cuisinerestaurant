@@ -469,7 +469,7 @@ button a {
 /******************************************
 /* Responsiveness
 /*******************************************/
-@media screen and (max-width:1200px){
+@media screen and (max-width:1300px){
 
      
      .fold {
@@ -595,5 +595,34 @@ button a {
           text-align: center;
           width: 100%;
           padding: 20px;
+     }
+
+     .highlight {
+          overflow: hidden;
+     }
+}
+
+@media screen and (max-width:1626px){
+     .order {
+          min-width: 0;
+          height: 2300px;
+     }
+
+     .container {
+          margin: 20px 20px;
+          padding: 5px 5px;
+          height: 451px;
+ 
+     }
+
+     .openhours li {
+          overflow: scroll;
+     }
+}
+
+@media screen and (max-width:1150px) {
+     .highlight img{
+          height: 80%;
+          width: 80%;
      }
 }
