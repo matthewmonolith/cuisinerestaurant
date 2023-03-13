@@ -552,7 +552,7 @@ button a {
 }
 
 
-@media screen and (max-width:1500px){
+@media screen and (max-width:1560px){
      .aboutus {
           display: flex;
           flex-direction: column;
@@ -623,6 +623,6 @@ button a {
 @media screen and (max-width:1150px) {
      .highlight img{
           height: 80%;
-          width: 80%;
+          width: 0%;
      }
 }
