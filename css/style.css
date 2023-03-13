@@ -1,0 +1,599 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+     font-size: 62.5%;
+     font-family: 'Libre Baskerville', serif;
+}
+
+body {
+     color: black;
+}
+
+a {
+     text-decoration: none;
+     color: black;
+ }
+
+ h3 {
+     color: orange;
+     font-weight: 700;
+ }
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     display: flex;
+     justify-content: flex-end;
+
+}
+
+header li {
+     list-style: none;
+     display: inline-block;
+     padding: 0 20px;
+     font-size: 2.5rem;
+     position: relative;
+     top: 50px;
+     right: 100px;
+     font-weight: 700;
+ }
+
+ .home a{
+     color: orange;
+ }
+
+
+.fold {
+     background-image: url("food1.jpg");
+     height: 1250px; /* You must set a specified height */
+     background-repeat: no-repeat; /* Do not repeat the image */
+     background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+h1 {
+     font-size: 10rem;
+     font-weight: 700;
+     width: 40%;
+     position: relative;
+     top: 400px;
+     left: 200px;
+}
+
+
+.aboutus {
+     background-image: url(food2.png);
+     height: 1000px;
+     background-repeat: no-repeat;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+}
+
+.aboutus section {
+     width: 50%;
+     padding-left: 100px;
+}
+
+.aboutus h3 {
+     color: orange;
+     font-size: 3rem;
+     margin-bottom: 15px;
+     margin-top: 0;
+}
+
+.aboutus h2 {
+     margin: 0;
+     font-weight: 700;
+     font-size: 7rem;
+}
+
+.aboutus p {
+     color: rgba(99, 95, 112, 1) ;
+     font-size: 2.8rem;
+     width: 80%;
+     text-align: justify;
+     margin-bottom: 50px;
+}
+
+.order {
+     text-align: center;
+     background-color: rgba(242, 246, 247, 0.2);
+     margin: 0;
+     padding: 0;
+     height: 1600px;
+
+}
+
+.order ol {
+     list-style: none;
+     display: flex;
+     justify-content: center;
+
+}
+
+.order li {
+     margin: 10px 15px;
+     border-bottom: 1px solid black;
+     font-size: 4rem;
+     color: rgba(99, 95, 112, 1);
+}
+
+.order h3 {
+     color: orange;
+     font-weight: 700;
+     font-size: 2.5rem;
+     margin-bottom: 2px;
+     padding-top: 100px;
+     margin-top: 0;
+}
+
+.order h2 {
+     font-weight: 700;
+     font-size: 6rem;
+     margin-top: 8px;
+}
+
+.foods {
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+
+.container {
+     position: relative;
+     margin: 25px 25px;
+   }
+   
+   .image {
+     opacity: 1;
+     display: block;
+     size: 50%;
+     /* width: 100%; */
+     /* height: auto; */
+     transition: .5s ease;
+     backface-visibility: hidden;
+   }
+   
+   .middle {
+     transition: .5s ease;
+     opacity: 0;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%)
+   }
+
+   .container:hover .image {
+     opacity: 0.2;
+   }
+   
+   .container:hover .middle {
+     opacity: 1;
+   }
+   
+   .text {
+     color: orange;
+     font-size: 3rem;
+     padding: 16px 32px;
+     font-weight: 700;
+   }
+
+
+.booking {
+     background-image: url(locbkgr.png);
+     height: 1300px;
+     background-repeat: no-repeat;
+     padding-top: 40px;
+}
+
+.booking h3, .booking span i {
+     font-size: 3rem;
+     color: orange;
+     margin: 10px 0;
+}
+
+.booking span i {
+     font-size: 5rem;
+     margin: 25px 0;
+}
+
+.booking h2 {
+     font-size: 8rem;
+     margin:0;
+}
+
+.booking h4 {
+     font-size: 2rem;
+}
+
+.times h4 {
+     font-size: 2.5rem;
+}
+
+.times span {
+     font-size: 3.5rem;
+     font-size: 700;
+}
+
+.highlight {
+     display: flex;
+     justify-content: center;
+     margin: 0;
+}
+
+.testimonials {
+     background-image: url(testimonials.png);
+     height: 1000px;
+     background-repeat: no-repeat;
+     background-position: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     padding-left: 150px;
+}
+
+.testimonials > section h3 {
+     font-size: 3rem;
+     font-weight: 700;
+     margin-top: 0;
+     padding-top: 100px;
+     /* position: relative;
+     left: 150px;
+     top: 50px; */
+}
+
+.testimonials h2 {
+     font-weight: 700;
+     font-size: 8rem;
+     /* position: relative;
+     left: 150px;
+     top:50px; */
+     margin: 10px 0;
+}
+
+.testimonials img {
+     margin:50px 0;
+}
+
+.smith {
+     float: left;
+     width: 10%;
+}
+
+.smith img {
+     margin: 0 5px;
+}
+
+.details {
+     float: left;
+     width: 90%;
+}
+
+.details span, .details img {
+     display: block;
+}
+
+.name {
+     font-size: 3rem;
+     font-weight: 700;
+}
+
+.title {
+     color: rgb(30, 29, 34);
+     font-size: 2rem;
+     margin-top: 13px;
+}
+
+.details img {
+     margin: 0;
+}
+
+.opinion p {
+     width: 50%;
+     color: rgb(30, 29, 34);
+     font-size: 2.5rem;
+     line-height: 28pt;
+     text-align: justify;
+}
+
+footer {
+     background: rgb(255,255,255);
+     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%, rgba(246,242,247,1) 100%);
+}
+footer section {
+     float: left;
+     width: 25%;
+}
+
+.logo {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     flex-wrap: wrap;
+     align-items: center;
+}
+
+.logo p {
+     color: rgba(99, 95, 112, 1);
+     font-size: 2rem;
+     width: 65%;
+     font-weight: 700;
+}
+
+.openhours {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.openhours h3 {
+     font-weight: 700;
+     font-size: 3rem;
+}
+
+.openhours ol {
+     list-style:none;
+}
+
+.openhours li {
+     color: rgba(99, 95, 112, 1);
+     font-size: 2rem;
+     padding: 10px 0;
+     font-weight: 700;
+}
+
+.contactus {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.contactus h3 {
+     font-weight: 700;
+     font-size: 3rem;
+}
+
+.contactus span {
+     font-size: 2rem;
+     color: rgba(99, 95, 112, 1);
+     padding: 10px 0;
+     font-weight: 700;
+}
+
+.newsletter {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.newsletter form input {
+     padding: 6px 5px;
+     border-radius: 10px;
+}
+
+.newsletter h3 {
+     font-weight: 700;
+     font-size: 3rem;
+}
+
+.bottompage section {
+     float:left;
+     width: 50%;
+     display: block;
+     text-align: center;
+     font-size: 2rem;
+     margin-top: 50px;
+     color: rgba(99, 95, 112, 1);
+     border-top: 1px solid gray;
+     padding: 20px 0;
+}
+
+.bottompage i {
+     font-size: 3rem;
+     margin: 0 10px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+button {
+     border-radius: 10px;
+     background-color: orange;
+     line-height: 1.7em !important;
+     font-size: 2.4rem;
+     padding: 20px;
+     border: 0;
+     margin: 0;
+}
+
+button a {
+     color: white;
+     font-weight: 700;
+}
+
+.centre {
+     text-align: center;
+     width: 100%
+}
+
+.number {
+     text-align: center;
+     width: auto;
+     display: block;
+     font-weight: 700;
+     color: orange;
+     font-size: 6rem;
+}
+
+.mon {
+     display: flex;
+     justify-content: center;
+}
+
+.mon span {
+     margin: 30px 200px;
+}
+
+.newsletter i {
+     color: orange;
+     font-size: 2rem;
+     margin-left: 10px;
+}
+
+/******************************************
+/* Responsiveness
+/*******************************************/
+@media screen and (max-width:1200px){
+
+     
+     .fold {
+          background-size: cover;
+     }
+
+
+     h1 {
+          margin: 0;
+          float: left;
+          width: 80%;
+          padding: 0;
+
+     }
+
+     .aboutus {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          background-image: none;
+          background-color: white;
+          margin: 0;
+          padding: 20px 0;
+     }
+
+     .aboutus section {
+          width: 100%;
+     }
+     .highlight {
+          overflow: hidden;
+          size: 40%;
+     }
+
+     .testimonials {
+          padding: 0;
+          text-align: center;
+     }
+
+     .testimonials .quote {
+          display: none;
+     }
+
+     .testimonials section {
+          float: left;
+          width: 100%;
+     }
+
+     .details section span{
+          text-align: center;
+     }
+
+     .details img {
+          margin: 0 auto;
+     }
+
+     .opinion p {
+          text-align: center;
+          width: 100%;
+          padding: 20px;
+     }
+
+     .mon {
+          display: flex;
+          flex-direction: row;
+          flex:1;
+          width: 100%;
+     }
+
+     .order {
+          min-width: 0;
+          height: 2300px;
+     }
+
+     .container {
+          margin: 20px 20px;
+          padding: 5px 5px;
+          height: 451px;
+ 
+     }
+}
+
+
+@media screen and (max-width:1500px){
+     .aboutus {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          background-image: none;
+          background-color: white;
+          margin: 0;
+          padding: 20px 0;
+     }
+
+     .aboutus section {
+          width: 100%;
+     }
+}
+
+@media screen and (max-width:1500px){
+     .testimonials {
+          padding: 0;
+          text-align: center;
+     }
+
+     .testimonials .quote {
+          display: none;
+     }
+
+     .testimonials section {
+          float: left;
+          width: 100%;
+     }
+
+     .details section span{
+          text-align: center;
+     }
+
+     .details img {
+          margin: 0 auto;
+     }
+
+     .opinion p {
+          text-align: center;
+          width: 100%;
+          padding: 20px;
+     }
+}
